@@ -1,10 +1,13 @@
 class Recalletta < Formula
   desc "Persistent memory system for Claude Code sessions"
   homepage "https://recalletta.ai"
-  url "https://github.com/recalletta/homebrew-recalletta/releases/download/v0.5.1/recalletta-v0.5.1-universal-apple-darwin.tar.gz"
-  sha256 "a9490c00de30540cf90e9e5c57bd5507af2f0df169224036ef4c937fe866eb20"
-  version "0.5.1"
-  license "MIT"
+  version "0.5.2"
+  license "Proprietary"
+
+  on_macos do
+    url "https://github.com/recalletta/homebrew-recalletta/releases/download/v0.5.2/recalletta-v0.5.2-universal-apple-darwin.tar.gz"
+    sha256 "853d2f17075e8ea644e28e5dc4d57cd140c9a4f405a32ed87102902a7bcd5677"
+  end
 
   def install
     bin.install "recalletta-universal" => "recalletta"
